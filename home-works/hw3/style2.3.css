@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #50e3c2;
+  text-align: center;
+}
+h2 {
+  padding-top: 16px;
+  padding-bottom: 20px;
+  font-size: 16px;
+  color: #2c3135;
+}
+.main-content {
+  background: #ffffff;
+  border: 1px solid #dfe4ef;
+  border-radius: 4px;
+  margin: auto;
+  width: 343px;
+  margin-top: 67px;
+}
+.month-days button {
+  background: #ffffff;
+  width: 44px;
+  height: 44px;
+  border: #ffffff;
+}
+.month-days button:hover {
+  background-color: #50e3c2;
+}
+button.active {
+  background-color: #50e3c2;
+}
+.month-days button.specify {
+  background-color: #edf2f5;
+}
+.month-days button.specify:hover {
+  background-color: #edf2f5;
+}
+table {
+  width: 308px;
+  border-collapse: separate;
+  border-spacing: 0 7px;
+  margin: auto;
+}
+.first-row {
+  font-size: 12px;
+  color: #7f8fa4;
+}
+.footer-button button {
+  padding-bottom: 24px;
+  padding-top: 32px;
+  background-color: #ffffff;
+  border: #ffffff;
+  color: #2c3135;
+  display: inline-block;
+
+}
+.left-btn {
+  margin-right: 150px;

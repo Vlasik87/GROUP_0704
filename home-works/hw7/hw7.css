@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --base-font-size: 15px;
+  --base-font-family: Roboto;
+  --base-text-color: white;
+  --base-backround-color: rgb(27, 34, 93);
+}
+
+html {
+  font-size: var(--base-font-size);
+  font-family: var(--base-font-family);
+  color: var(--base-text-color);
+  background-color: var(--base-backround-color);
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  font-size: 24px;
+  margin-left: 10px;
+  width: 219px;
+  margin-bottom: 15px;
+}
+
+.page-content {
+  max-width: 550px;
+  width: 100%;
+  position: relative;
+  top: 285px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.box1 {
+  background-color: #af16b3;
+}
+
+.box2 {
+  background-color: #16b3a9;
+}
+
+.box3 {
+  background-color: #d09d18;
+}
+
+.box4 {
+  background-color: #16b34b;
+}
+
+.box5 {
+  background-color: #b31616;
+}
+
+.box6 {
+  background-color: #48d018;
+}
+
+.box7 {
+  background-color: black;
+}
+
+.box8 {
+  background-color: #16b3a9;
+}
+
+.thumbnail > span {
+  position: absolute;
+  bottom: 0;
+}
+
+.thumbnail > a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+span.link-caption {
+  position: absolute;
+  top: 50%;
+}

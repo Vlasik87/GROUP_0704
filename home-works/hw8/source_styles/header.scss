@@ -1,0 +1,28 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+.header-content {
+  height: 60px;
+  background-color: black;
+  max-width: 2048px;
+  width: 100%;
+  @include mediaXSscreen {
+    max-width: 320px;
+    width: 100%;
+  }
+}
+
+.nav-content {
+  line-height: 60px;
+  text-align: right;
+  margin-right: 400px;
+  @include mediaXSscreen {
+    margin: auto;
+  }
+}
+
+.nav-item {
+  color: $header-font-colour;
+  margin-right: 20px;
+  font-size: 13px;
+}

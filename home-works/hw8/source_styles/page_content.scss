@@ -1,0 +1,79 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+.banner-section {
+  @include sectionContent;
+  height: 1168px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include mediaXSscreen {
+    width: 320px;
+    background-position-x: center;
+    height: 339px;
+  }
+}
+
+form {
+  position: absolute;
+  width: 441px;
+  background-color: $background-content-color;
+  left: 414px;
+  top: 360px;
+  @include mediaXSscreen {
+    display: none;
+  }
+}
+
+.form-title {
+  padding-left: 32px;
+  padding-top: 15px;
+  font-size: 20px;
+  color: $font-color;
+}
+
+.label-text {
+  margin-top: 24px;
+  margin-left: 32px;
+  color: #484848;
+}
+
+.input-location {
+  @include inputArea;
+  width: 377px;
+  margin-left: 32px;
+}
+
+.input-field {
+  @include inputArea;
+  width: 188px;
+}
+
+.dates-fields {
+  display: flex;
+  justify-content: center;
+}
+
+.label-dates {
+  margin-top: 15px;
+  margin-left: 32px;
+  color: #484848;
+  width: 377px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 140px;
+}
+
+.form-button {
+  width: 153px;
+  height: 48px;
+  background: #ff5a5f;
+  border-radius: 4px;
+  border: #ff5a5f;
+  color: white;
+  font-size: 15px;
+  margin: 15px 256px 24px;
+}
+
+footer {
+  height: 430px;
+}

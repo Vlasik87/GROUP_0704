@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #292325;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.head-menu {
+  top: 0px;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 470px;
+  min-width: 960px;
+  z-index: 1;
+}
+
+.page-nav {
+  text-align: center;
+  height: 90px;
+  border-bottom: 2px solid #131313;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.page-link {
+  color: #131313;
+  display: inline-block;
+  margin: 0 20px;
+  line-height: 90px;
+}
+
+.page-link.active {
+  color: rgb(98, 98, 98);
+}
+
+.page-link:hover {
+  color: rgb(98, 98, 98);
+}
+
+.page-content {
+  min-height: calc(100vh - 90px);
+  max-width: 960px;
+  margin: 90px auto;
+}
+
+.name-section {
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+  color: inherit;
+  letter-spacing: 0.25em;
+}
+
+.promotion-baner,
+.info-baner,
+.scrol-baner {
+  font-size: 0;
+}
+
+.baner-item {
+  font-size: 15px;
+  height: 680px;
+  width: calc(33.3333% - 16px);
+  display: inline-block;
+  margin: 0 8px;
+  position: relative;
+  text-align: center;
+}
+
+.page-footer {
+  height: 57px;
+  background: #f7eae4;
+  margin: 0 auto;
+  max-width: 960px;
+  line-height: 57px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.item-description {
+  position: absolute;
+  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.action-button {
+  display: block;
+  width: 150px;
+  color: #292325;
+  margin: 40px auto 0;
+  padding: 12px 20px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.action-button:hover {
+  border-color: #292325;
+}
+
+.baner-item.colored {
+  background-color: #f7eae4;
+}
+
+.baner-item.with-image {
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-color: inherit;
+  background-position: inherit;
+}
+
+.inline-baner {
+  max-width: 960px;
+  height: 120px;
+  font-size: 22px;
+  text-align: center;
+  line-height: 120px;
+  background-color: #f7eae4;
+  margin: 16px 8px;
+}
+
+.info-item {
+  width: calc(50% - 16px);
+  display: inline-block;
+  margin: 0 8px;
+  position: relative;
+  text-align: center;
+  height: 436px;
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.info-button {
+  width: 160px;
+  height: 50px;
+  display: block;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(255, 255, 255, 1);
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  color: #292325;
+  padding: 12px 20px;
+  font-size: 16px;
+}
+
+.inline-baner.social-baner {
+  background-color: white;
+}
+
+.scrol-item {
+  height: 106px;
+  width: calc(12.5% - 16px);
+  display: inline-block;
+  margin: 16px;
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.form-field {
+  width: 353px;
+  margin: auto;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+
+.subscribe-title {
+  font-size: 16px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.input-field {
+  width: 338px;
+  height: 33px;
+  border: 3px solid rgba(255, 64, 64, 1);
+  padding-left: 3px;
+}
+.input-wrapper {
+  margin-top: 35px;
+}
+
+.btn-wrapper {
+  margin-top: 5px;
+  padding-bottom: 70px;
+}
+.btn {
+  background-color: rgba(41, 35, 37, 1);
+  width: 338px;
+  height: 33px;
+  border: 3px solid rgba(41, 35, 37, 1);
+  font-size: 16px;
+  color: white;
+}

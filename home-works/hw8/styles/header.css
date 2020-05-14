@@ -1,0 +1,31 @@
+.header-content {
+  height: 60px;
+  background-color: black;
+  max-width: 2048px;
+  width: 100%;
+}
+@media (max-width: 320px) {
+  .header-content {
+    max-width: 320px;
+    width: 100%;
+  }
+}
+
+.nav-content {
+  line-height: 60px;
+  text-align: right;
+  margin-right: 400px;
+}
+@media (max-width: 320px) {
+  .nav-content {
+    margin: auto;
+  }
+}
+
+.nav-item {
+  color: white;
+  margin-right: 20px;
+  font-size: 13px;
+}
+
+/*# sourceMappingURL=header.css.map */

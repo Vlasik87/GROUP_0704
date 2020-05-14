@@ -1,0 +1,100 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+.card-content {
+  @include sectionContent;
+  height: 1368px;
+  border-bottom: 10px solid #b7b3b3;
+}
+
+.grid-view {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  height: 1090px;
+  width: 1240px;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  @include mediaXSscreen {
+    width: 320px;
+    padding: 7px;
+    top: auto;
+  }
+}
+
+[class*="col-"] {
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 525px;
+  padding: 10px;
+  @include mediaXSscreen {
+    padding: 7px;
+  }
+}
+
+.col-1 {
+  width: $col-width;
+}
+
+.col-2 {
+  width: calc($col-width * 2);
+}
+
+.col-3 {
+  width: calc($col-width * 3);
+}
+
+.col-4 {
+  width: calc($col-width * 4);
+}
+
+.underimage-text {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 13px;
+  margin-left: 19px;
+  margin-right: 19px;
+  font-size: 17px;
+  font-weight: bold;
+  color: $font-color;
+}
+
+.description-text {
+  margin-top: 11px;
+  margin-left: 19px;
+  font-size: 13px;
+  color: $font-color;
+}
+
+.booking-button {
+  background: #18c6d1;
+  border-radius: 5px;
+  width: 252px;
+  height: 40px;
+  border: #18c6d1;
+  margin-top: 11px;
+  color: white;
+  margin-left: 19px;
+  &:hover {
+    background: #14d081;
+    border: #14d081;
+  }
+}
+
+.thumbnail-box {
+  border: 2px solid #e5e5e5;
+  border-style: solid;
+  border-radius: 3px;
+  width: 292px;
+  height: 100%;
+}
+
+@media (max-width: 320px) {
+  .col-sm-4 {
+    width: 320px;
+  }
+}

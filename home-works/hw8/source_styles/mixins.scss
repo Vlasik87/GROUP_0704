@@ -1,0 +1,20 @@
+@import "./variables.scss";
+
+@mixin inputArea {
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
+  height: 48px;
+  margin-top: 15px;
+}
+
+@mixin sectionContent {
+  max-width: 2048px;
+  width: 100%;
+  position: relative;
+}
+
+@mixin mediaXSscreen {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
