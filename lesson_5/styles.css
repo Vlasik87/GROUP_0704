@@ -31,6 +31,11 @@ a {
   text-decoration: none;
 }
 
+.page-content {
+  max-width: 960px;
+  width: 100%;
+}
+
 .page-header {
   background-color: var(--header-bg-color);
   height: 40px;
@@ -39,11 +44,6 @@ a {
 .page-section {
   display: flex;
   justify-content: center;
-}
-
-.page-content {
-  max-width: 960px;
-  width: 100%;
 }
 
 .logo {
@@ -66,10 +66,6 @@ a {
   align-items: center;
   color: var(--base-text-color);
 }
-
-/* .nav-item:hover {
-  --header-bg-color: green;
-} */
 
 .nav-item:last-child {
   margin-right: 0;
