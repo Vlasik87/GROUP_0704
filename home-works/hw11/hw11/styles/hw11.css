@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.traffic-lights {
+  width: 75px;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+.lights {
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 5px auto;
+  border: 1px solid black;
+}
+.lights.active.redColor {
+  background-color: red;
+}
+.lights.active.yellowColor {
+  background-color: yellow;
+}
+.lights.active.greenColor {
+  background-color: green;
+}
+
+/*# sourceMappingURL=hw11.css.map */

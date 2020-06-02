@@ -26,22 +26,27 @@ a {
   text-decoration: none;
 }
 
-.head-menu {
+/*.head-menu {
   top: 0px;
   background: white;
   position: fixed;
-  top: 0;
   left: 470px;
   min-width: 960px;
   z-index: 1;
-}
+} */
 
 .page-nav {
   text-align: center;
   height: 90px;
   border-bottom: 2px solid #131313;
   max-width: 960px;
-  margin: 0 auto;
+  width: 100%;
+  background: white;
+  z-index: 1;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
 }
 
 .page-link {
@@ -101,7 +106,6 @@ a {
 
 .item-description {
   position: absolute;
-  top: 0;
   top: 50%;
   transform: translateY(-50%);
   width: 100%;
@@ -127,7 +131,6 @@ a {
 
 .baner-item.with-image {
   background-size: cover;
-  background-position: center bottom;
   background-repeat: no-repeat;
   background-color: inherit;
   background-position: inherit;

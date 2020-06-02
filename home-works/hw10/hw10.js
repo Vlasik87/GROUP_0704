@@ -1,4 +1,4 @@
-var name = prompt("Enter name");
+/*var name = prompt("Enter name");
 if (name === "Mila") {
   console.log("Hello Mila");
 } else if (name === "Mike") {
@@ -50,4 +50,4 @@ for (var i = 0; i < input.length; i++) {
     output += input[i];
   }
 }
-console.log(output);
+console.log(output); */
