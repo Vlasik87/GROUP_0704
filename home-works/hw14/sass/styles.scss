@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.form_content {
+  width: 400px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.text_content {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+label,
+button {
+  font-weight: 550;
+}
+
+.btn {
+  width: 70px;
+  height: 25px;
+  border-radius: 2px;
+  border: 1px solid rgb(40, 109, 44);
+  background-color: rgb(40, 109, 44);
+  color: white;
+}
+
+.comment {
+  width: 400px;
+  height: 130px;
+  border: 1px solid grey;
+  margin: 20px auto;
+  border-radius: 4px;
+}
+
+.comment_text {
+  padding-left: 20px;
+}
+
+.btn_remove {
+  width: 30px;
+  height: 30px;
+  font-size: 12px;
+  position: relative;
+  left: 90%;
+  margin: 10px 0;
+  border: 1px solid rgb(142, 202, 145);
+  background-color: rgb(142, 202, 145);
+}

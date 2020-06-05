@@ -7,7 +7,6 @@ function lighterFactory(count) {
   }
   // тут нужно написать реализацию
 }
-lighterFactory(2);
 
 function random_bg_color() {
   let x = Math.floor(Math.random() * 256);
@@ -35,3 +34,6 @@ for (let i = 0; i < colors.length; i++) {
     color.style.backgroundColor = random_bg_color();
   });
 }
+
+export { lighterFactory };
+export { colors };
