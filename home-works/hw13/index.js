@@ -1,4 +1,9 @@
-import { lighterFactory } from "./lightfactory.js";
-import { colors } from "./lightfactory.js";
+import { Lights } from "./lightfactory.js";
 
-lighterFactory(2);
+const body = document.querySelector("body");
+const light = new Lights(body, function () {
+  this.lightsElement.classList.add("active");
+});
+
+light.render();
+light.render();

@@ -1,11 +1,15 @@
-function lighterFactory(count) {
-  for (let i = 0; i < count; i++) {
-    const light = document.createElement("div");
-    light.classList.add("lights");
-    const newElement = document.querySelector("body");
-    newElement.appendChild(light);
+class Lights {
+  constructor(root, onClick) {
+    this.root = root;
+    this.onClick = onClick;
   }
-  // тут нужно написать реализацию
+
+  render() {
+    this.lightsElement = document.createElement("div");
+    this.lightsElement.classList.add("lights");
+    this.lightsElement.addEventListener("click", this.onClick);
+    this.root.append(this.lightsElement);
+  }
 }
 
 function random_bg_color() {
@@ -17,23 +21,4 @@ function random_bg_color() {
   return bgColor;
 }
 
-const colors = document.querySelectorAll(".lights");
-function colorOff() {
-  for (let i = 0; i < colors.length; i++) {
-    const color = colors[i];
-    color.classList.remove("active");
-    color.style.backgroundColor = "white";
-  }
-}
-
-for (let i = 0; i < colors.length; i++) {
-  const color = colors[i];
-  color.addEventListener("click", function () {
-    colorOff();
-    color.classList.add("active");
-    color.style.backgroundColor = random_bg_color();
-  });
-}
-
-export { lighterFactory };
-export { colors };
+export { Lights };
