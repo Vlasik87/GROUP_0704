@@ -22,58 +22,62 @@ p {
 }
 
 .root {
-  display: flex;
-  justify-content: center;
-  width: 800px;
-  flex-wrap: wrap;
+  width: 600px;
   margin: 0 auto;
+  position: relative;
 }
 .movies-list {
-  padding: 20px;
-  display: flex;
-  justify-content: space-around;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  width: 400px;
+  width: 600px;
+  height: 750px;
   opacity: 0;
   visibility: hidden;
+  padding-top: 20px;
+  position: absolute;
 }
 
 .movies-list.active {
   opacity: 1;
   visibility: visible;
 }
-.banner {
-  width: 391px;
-  height: 500px;
-}
-
-.text-box {
-  width: 400px;
-  padding: 20px;
-  transform: translateY(-75%) translateX(50%);
+img {
+  width: 600px;
+  height: 750px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  visibility: hidden;
-  margin-top: 10px;
 }
 
-.text-box.active {
-  opacity: 1;
-  visibility: visible;
+.genre {
+  position: absolute;
+  top: 3%;
+  left: 1.5%;
+}
+
+.rating {
+  position: absolute;
+  left: 94%;
+  top: 3%;
 }
 
 .description {
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  color: white;
+  transform: translateX(-50%);
+  /* display: block; */
+  width: 580px;
   text-align: justify;
-  padding-top: 10px;
+}
+
+.title {
+  position: absolute;
+  top: 75%;
+  left: 1.5%;
 }
 
 .title,
-.rating {
-  padding-top: 10px;
+.rating,
+.genre {
   font-weight: bold;
+  color: white;
+  font-size: 20px;
 }

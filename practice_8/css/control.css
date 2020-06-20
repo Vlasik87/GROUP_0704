@@ -1,0 +1,18 @@
+:root {
+  --color: white;
+}
+
+.control {
+  border: none;
+  background: rgb(153, 208, 233);
+  font-size: 1rem;
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  color: var(--color);
+}
+
+.control:hover {
+  background: lightblue;
+}

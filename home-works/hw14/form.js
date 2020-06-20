@@ -42,7 +42,7 @@ function createPage(root) {
 
   //отключение автоматического обновления страницы после отправки формы
   form.addEventListener("submit", function (eventObject) {
-    eventObject.preventDefault;
+    eventObject.preventDefault();
     const textArea = eventObject.target[0];
     console.log("submit", textArea.value);
     const list = createList(textArea.value);
