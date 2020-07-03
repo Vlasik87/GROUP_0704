@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "MyWebFont";
+  src: url("/final_project/fonts/normal.woff") format("woff");
+  font-weight: 400px;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyWebFont";
+  src: url("/final_project/fonts/Italic.woff2") format("woff");
+  font-weight: 400px;
+  font-style: italic;
+}
+@font-face {
+  font-family: "MyWebFont";
+  src: url("/final_project/fonts/bold2.woff") format("woff");
+  font-weight: 700px;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: MyWebFont;
+}
+
+section {
+  display: block;
+  max-width: 1450px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h2,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+.baner-images {
+  font-size: 15px;
+  height: 650px;
+  width: 100%;
+  text-align: left;
+  position: relative;
+}
+
+.item-description {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
+  width: 500px;
+}
+
+.description-head {
+  font-size: 70px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.description-secondary {
+  font-size: 24px;
+}
+
+.action-button {
+  display: block;
+  width: 150px;
+  color: #292325;
+  margin: 40px 0;
+  padding: 12px 20px;
+  background-color: white;
+  border: 1px solid white;
+  font-style: italic;
+}
+
+/*# sourceMappingURL=banner_slider.css.map */

@@ -1,0 +1,243 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.1.45/css/materialdesignicons.css");
+
+@font-face {
+  font-family: "MyWebFont";
+  src: url("/final_project/fonts/normal.woff") format("woff");
+  font-weight: 400px;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MyWebFont";
+  src: url("/final_project/fonts/Italic.woff2") format("woff");
+  font-weight: 400px;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "MyWebFont";
+  src: url("/final_project/fonts/bold2.woff") format("woff");
+  font-weight: 700px;
+  font-style: normal;
+}
+
+h3,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.header_content {
+  font-family: MyWebFont;
+  max-width: 1450px;
+  width: 100%;
+  background-color: rgb(13, 53, 13);
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.name-title {
+  width: 300px;
+  background-color: #fc6c34;
+  height: 100%;
+}
+
+.name-title > * {
+  padding-left: 5px;
+  margin: 0 auto;
+  padding-top: 25px;
+  color: rgb(13, 53, 13);
+}
+
+.title_text {
+  font-style: italic;
+  font-size: 18px;
+}
+
+.title_text_primary {
+  letter-spacing: 2px;
+}
+
+.menu-content {
+  margin-left: 400px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 100px;
+  margin: 0;
+  padding: 0;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.controls-btn {
+  display: none;
+  height: 100%;
+  width: 50px;
+}
+
+.menu li {
+  list-style: none;
+  line-height: 100px;
+}
+
+.menu li a {
+  display: block;
+  height: 100%;
+  padding: 0 10px;
+  color: white;
+  font-family: MyWebFont;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.menu li a:hover {
+  color: #f98f39;
+}
+
+.logIn {
+  color: #fc6c34;
+  font-size: 18px;
+  font-style: italic;
+  margin-left: 50px;
+}
+
+.logIn:hover {
+  color: rgb(235, 117, 117);
+}
+
+.logIn-icon {
+  border: 1px solid rgb(13, 53, 13);
+  border-radius: 50%;
+  font-size: 20px;
+  color: rgb(13, 53, 13);
+  background-color: #fc6c34;
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+}
+
+.joinus-btn {
+  writing-mode: tb-rl;
+  width: 150px;
+  background-color: #fc6c34;
+  height: 100%;
+  text-align: center;
+  font-style: italic;
+}
+
+.joinUs-icon {
+  color: rgb(13, 53, 13);
+  font-size: 15px;
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 560px) {
+  .show-menu-btn {
+    position: absolute;
+    background-color: #fc6c34;
+    color: white;
+    border: none;
+    font-size: 32px;
+    top: 40px;
+    right: 50px;
+  }
+
+  .controls-btn {
+    display: block;
+  }
+
+  .menu-content {
+    display: none;
+  }
+
+  .menu.active {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    left: 0;
+    top: 0;
+  }
+
+  .name-title {
+    position: relative;
+    left: 50%;
+    transform: translateX(-20%);
+    height: 100px;
+  }
+
+  .login-btn {
+    visibility: hidden;
+  }
+
+  .joinus-btn {
+    height: 100px;
+    position: absolute;
+    left: 0;
+  }
+
+  .header_content {
+    background-color: #fc6c34;
+  }
+
+  .hide-menu-btn {
+    display: none;
+  }
+
+  .menu-content.active {
+    display: block;
+  }
+
+  .hide-menu-btn.active {
+    display: block;
+    position: absolute;
+    background-color: rgb(13, 53, 13);
+    color: #fc6c34;
+    border: none;
+    font-size: 20px;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+  }
+
+  .show-menu-btn.inactive {
+    display: none;
+  }
+
+  .name-title.inactive {
+    display: none;
+  }
+
+  .header_content.active {
+    background-color: rgb(13, 53, 13);
+    height: 100vh;
+  }
+
+  .joinus-btn.inactive {
+    display: none;
+  }
+
+  .menu.active {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 20px;
+  }
+
+  .login-btn.active {
+    position: absolute;
+    top: 20px;
+    right: 35%;
+    visibility: visible;
+  }
+}
