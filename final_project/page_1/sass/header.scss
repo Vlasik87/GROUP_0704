@@ -30,7 +30,6 @@ li {
 
 .header_content {
   font-family: MyWebFont;
-  max-width: 1450px;
   width: 100%;
   background-color: rgb(13, 53, 13);
   height: 100px;
@@ -44,6 +43,7 @@ li {
   width: 300px;
   background-color: #fc6c34;
   height: 100%;
+  z-index: 1;
 }
 
 .name-title > * {
@@ -63,7 +63,8 @@ li {
 }
 
 .menu-content {
-  margin-left: 400px;
+  position: absolute;
+  right: 350px;
 }
 
 .menu {
@@ -101,6 +102,12 @@ li {
   color: #f98f39;
 }
 
+.login-btn {
+  line-height: 100px;
+  position: absolute;
+  right: 200px;
+}
+
 .logIn {
   color: #fc6c34;
   font-size: 18px;
@@ -126,19 +133,49 @@ a {
 }
 
 .joinus-btn {
-  writing-mode: tb-rl;
-  width: 150px;
+  position: fixed;
+  height: 100px;
   background-color: #fc6c34;
-  height: 100%;
-  text-align: center;
-  font-style: italic;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  right: 0;
+  z-index: 10;
+}
+
+.joinus-btn-img-container {
+  width: 62px;
+  height: 100px;
+  position: relative;
+  left: -45px;
+  background-color: #fc6c34;
+}
+
+.link-image {
+  position: relative;
+  background-color: #fc6c34;
+  height: 57px;
+  width: 62px;
+  display: block;
+  top: 20px;
+  left: 30px;
+}
+
+.text-container {
+  margin-right: 30px;
 }
 
 .joinUs-icon {
-  color: rgb(13, 53, 13);
   font-size: 15px;
+  color: #293e31;
+  writing-mode: tb-rl;
+  padding-top: 25px;
+  font-style: italic;
+}
+
+svg {
   width: 100%;
-  display: block;
+  height: 100%;
 }
 
 @media (max-width: 560px) {
