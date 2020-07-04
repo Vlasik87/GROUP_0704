@@ -1,10 +1,38 @@
+@font-face {
+  font-family: "MyWebFont";
+  src: url("/final_project/fonts/normal.woff") format("woff");
+  font-weight: 400px;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MyWebFont";
+  src: url("/final_project/fonts/Italic.woff2") format("woff");
+  font-weight: 400px;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "MyWebFont";
+  src: url("/final_project/fonts/bold2.woff") format("woff");
+  font-weight: 700px;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
 }
-body {
-  font-family: Verdana, sans-serif;
-  margin: 0;
+
+html {
+  font-family: MyWebFont;
 }
+
+section {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .mySlides {
   display: none;
 }
@@ -36,7 +64,7 @@ img {
   z-index: 1;
   position: absolute;
   width: 100%;
-  bottom: -400px;
+  bottom: -300px;
 }
 .active,
 .dot:hover {
