@@ -24,10 +24,17 @@ li {
   padding: 0;
 }
 
+:root {
+  --bg-color-orange: #fe8340;
+  --bg-color-green: #293e31;
+  --text-color-orange: #fe8340;
+  --text-color-green: #293e31;
+}
+
 .header_content {
   font-family: MyWebFont;
   width: 100%;
-  background-color: #0d350d;
+  background-color: var(--bg-color-green);
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -37,7 +44,7 @@ li {
 
 .name-title {
   width: 300px;
-  background-color: #fc6c34;
+  background-color: var(--bg-color-orange);
   height: 100%;
   z-index: 1;
 }
@@ -46,7 +53,7 @@ li {
   padding-left: 5px;
   margin: 0 auto;
   padding-top: 25px;
-  color: #0d350d;
+  color: var(--text-color-green);
 }
 
 .title_text {
@@ -88,14 +95,14 @@ li {
   display: block;
   height: 100%;
   padding: 0 10px;
-  color: white;
+  color: #fcf9f4;
   font-family: MyWebFont;
   font-size: 14px;
   font-style: italic;
 }
 
 .menu li a:hover {
-  color: #f98f39;
+  color: var(--text-color-orange);
 }
 
 .login-btn {
@@ -105,22 +112,22 @@ li {
 }
 
 .logIn {
-  color: #fc6c34;
+  color: var(--text-color-orange);
   font-size: 18px;
   font-style: italic;
   margin-left: 50px;
 }
 
 .logIn:hover {
-  color: #eb7575;
+  color: #feb19f;
 }
 
 .logIn-icon {
-  border: 1px solid #0d350d;
+  border: 1px solid var(--bg-color-green);
   border-radius: 50%;
   font-size: 20px;
-  color: #0d350d;
-  background-color: #fc6c34;
+  color: var(--text-color-green);
+  background-color: var(--bg-color-orange);
   font-style: italic;
 }
 
@@ -131,7 +138,7 @@ a {
 .joinus-btn {
   position: fixed;
   height: 100px;
-  background-color: #fc6c34;
+  background-color: var(--bg-color-orange);
   width: 150px;
   display: flex;
   justify-content: space-between;
@@ -144,12 +151,12 @@ a {
   height: 100px;
   position: relative;
   left: -45px;
-  background-color: #fc6c34;
+  background-color: var(--bg-color-orange);
 }
 
 .link-image {
   position: relative;
-  background-color: #fc6c34;
+  background-color: var(--bg-color-orange);
   height: 57px;
   width: 62px;
   display: block;
@@ -163,7 +170,7 @@ a {
 
 .joinUs-icon {
   font-size: 15px;
-  color: #293e31;
+  color: var(--text-color-green);
   writing-mode: tb-rl;
   padding-top: 25px;
   font-style: italic;
@@ -177,8 +184,8 @@ svg {
 @media (max-width: 560px) {
   .show-menu-btn {
     position: absolute;
-    background-color: #fc6c34;
-    color: white;
+    background-color: var(--bg-color-orange);
+    color: #fcf9f4;
     border: none;
     font-size: 32px;
     top: 40px;
@@ -220,7 +227,7 @@ svg {
   }
 
   .header_content {
-    background-color: #fc6c34;
+    background-color: var(--bg-color-orange);
   }
 
   .hide-menu-btn {
@@ -234,8 +241,8 @@ svg {
   .hide-menu-btn.active {
     display: block;
     position: absolute;
-    background-color: #0d350d;
-    color: #fc6c34;
+    background-color: var(--bg-color-green);
+    color: var(--text-color-orange);
     border: none;
     font-size: 20px;
     top: 20px;
@@ -252,7 +259,7 @@ svg {
   }
 
   .header_content.active {
-    background-color: #0d350d;
+    background-color: var(--bg-color-green);
     height: 100vh;
   }
 
