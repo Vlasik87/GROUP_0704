@@ -18,7 +18,7 @@ menuControl.addEventListener("click", () => {
   navItem.classList.add("active");
   loginBtn.classList.add("active");
   hideBtn.classList.add("active");
-  console.log("hello");
+  console.log("hi");
 });
 
 const menuHide = document.querySelector("#hide-btn");

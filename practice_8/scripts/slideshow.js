@@ -48,7 +48,7 @@ export class SlideShow {
     controlsWrapper.classList.add("slideshow_controls");
     const controls = [
       {
-        title: "<",
+        title: "",
         onClick: () => this._previosSlide(),
       },
       {
