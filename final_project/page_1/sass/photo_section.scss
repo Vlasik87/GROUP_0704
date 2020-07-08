@@ -43,4 +43,8 @@ html {
 .image-wrapper {
   height: 100%;
   overflow: hidden;
+  width: 100%;
+  & img {
+    width: 100%;
+  }
 }

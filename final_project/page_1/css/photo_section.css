@@ -43,6 +43,10 @@ html {
 .image-wrapper {
   height: 100%;
   overflow: hidden;
+  width: 100%;
+}
+.image-wrapper img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=photo_section.css.map */

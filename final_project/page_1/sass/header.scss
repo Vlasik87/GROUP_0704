@@ -148,6 +148,9 @@ a {
   justify-content: space-between;
   right: 0;
   z-index: 10;
+  &.inactive {
+    display: none;
+  }
 }
 
 .joinus-btn-img-container {
@@ -183,6 +186,21 @@ a {
 .santa-svg {
   width: 100%;
   height: 100%;
+}
+
+.joinUs-side-conteiner {
+  display: none;
+}
+
+.joinUs-side-conteiner.active {
+  width: 708px;
+  display: block;
+  position: fixed;
+  z-index: 2;
+  background-color: #293e31;
+  top: 0;
+  right: 0;
+  height: 1000px;
 }
 
 @media (max-width: 560px) {
