@@ -97,10 +97,7 @@ img {
   }
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev,
-  .next,
+@media only screen and (max-width: 415px) {
   .text {
     font-size: 11px;
   }

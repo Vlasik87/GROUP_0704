@@ -93,4 +93,35 @@ html {
   transform: translateX(-50%) translateY(-50%);
 }
 
+@media (max-width: 415px) {
+  .white-container {
+    width: 100%;
+    top: 5%;
+    transform: none;
+  }
+
+  .svg-img {
+    width: 25%;
+    height: 25%;
+    top: 12.5%;
+    left: 83%;
+  }
+
+  .slideshow {
+    width: 360px;
+    top: 20%;
+    left: 5%;
+  }
+
+  .button-produce {
+    top: 92%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .rootPoint {
+    min-height: 100vh;
+  }
+}
+
 /*# sourceMappingURL=section_produce.css.map */

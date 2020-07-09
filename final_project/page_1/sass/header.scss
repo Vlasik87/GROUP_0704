@@ -203,7 +203,7 @@ a {
   height: 1000px;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 415px) {
   .show-menu-btn {
     position: absolute;
     background-color: var(--bg-color-orange);
@@ -211,7 +211,7 @@ a {
     border: none;
     font-size: 32px;
     top: 40px;
-    right: 50px;
+    right: 5px;
     z-index: 1;
   }
 
@@ -234,7 +234,7 @@ a {
 
   .name-title {
     position: relative;
-    left: 50%;
+    left: 52%;
     transform: translateX(-20%);
     height: 100px;
   }
@@ -247,6 +247,7 @@ a {
     height: 100px;
     position: absolute;
     left: 0;
+    width: 140px;
   }
 
   .header_content {

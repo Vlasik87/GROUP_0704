@@ -194,3 +194,74 @@ h2 {
     font-size: 50px;
   }
 }
+
+@media (max-width: 415px) {
+  .contact-info {
+    top: 0;
+    flex-wrap: wrap;
+    height: auto;
+    transform: none;
+    width: auto;
+    left: auto;
+    position: relative;
+  }
+
+  .footer-section {
+    height: auto;
+  }
+
+  .midbox-wrap,
+  .twit-wrap {
+    border-left: none;
+    border-right: none;
+  }
+
+  .svg-house {
+    position: unset;
+    right: 5%;
+    top: 20%;
+  }
+
+  .input-container {
+    flex-wrap: wrap;
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    height: auto;
+    & h3 {
+      display: none;
+    }
+  }
+
+  .input-wrapp {
+    margin-left: 25px;
+  }
+
+  .input-container button {
+    margin-bottom: 10px;
+  }
+
+  .social-container {
+    justify-content: center;
+    position: relative;
+    bottom: auto;
+    width: auto;
+    left: auto;
+    transform: none;
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  .bottom-text {
+    position: unset;
+    transform: none;
+    margin-left: 25px;
+  }
+
+  .chat-icon {
+    left: 61%;
+    right: auto;
+    bottom: 30px;
+  }
+}

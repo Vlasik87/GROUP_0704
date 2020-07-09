@@ -92,3 +92,22 @@ html {
   margin-top: 15px;
   font-size: 16px;
 }
+
+@media (max-width: 415px) {
+  .support-section {
+    flex-wrap: wrap;
+  }
+
+  .second-section-text {
+    width: 100%;
+    left: 0;
+  }
+
+  .underhead-text {
+    width: 350px;
+  }
+
+  .support-section-content {
+    width: 100%;
+  }
+}

@@ -131,3 +131,19 @@ a > h5 {
   left: 50%;
   transform: translateX(-50%);
 }
+
+@media (max-width: 415px) {
+  .blog-section-content-box {
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    margin: 20px 120px;
+    position: unset;
+    transform: none;
+  }
+
+  .blog-section {
+    height: auto;
+  }
+}

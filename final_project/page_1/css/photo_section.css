@@ -49,4 +49,22 @@ html {
   width: 100%;
 }
 
+@media (max-width: 415px) {
+  .photo-conteiner {
+    height: 80vh;
+  }
+
+  .photo-conteiner-content:first-child {
+    width: 100%;
+  }
+
+  .image-wrapper-green > img {
+    width: 100%;
+  }
+
+  .photo-conteiner-content:last-child {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=photo_section.css.map */
