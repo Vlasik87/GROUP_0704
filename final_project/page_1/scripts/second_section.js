@@ -18,7 +18,7 @@ export class SectionSecond {
             </div>
           </div>
     <div class="support-section-content">
-          <img class="svg-image" src="./image.svg" alt="" />
+          <img class="svg-image" src="../icons/image.svg" alt="" />
     </div>
 `;
     this._root.append(this._containerElement);

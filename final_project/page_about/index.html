@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../page_1/css/header.css" />
+    <link rel="stylesheet" href="../page_1/css/side_content.css">
+    <link rel="stylesheet" href="../page_1/css/footer.css">
+    <link rel="stylesheet" href="../page_1/css/pageAbout_banner.css">
+    <link rel="stylesheet" href="../page_1/css/our_story_about.css">
+  </head>
+  <body>
+    <header class="header_content">
+        <div class="name-title">
+          <h3 class="title_text_primary">Deerfield Farm</h3>
+          <span class="title_text">Season's Best</span>
+        </div>
+        <div class="controls-btn">
+          <button class="show-menu-btn">
+            <span class="mdi mdi-menu"></span>
+          </button>
+          <button class="hide-menu-btn" id="hide-btn">
+            <span class="mdi mdi-close-thick"></span>
+          </button>
+        </div>
+        <div class="menu-content">
+          <ul class="menu">
+            <li><a href="../page_1/index.html" class="nav">Home</a></li>
+            <li><a href="../page_about/index.html" class="nav_item">About</a></li>
+            <li><a href="#" class="nav_item">Our Produce</a></li>
+            <li><a href="#" class="nav_item">Blog</a></li>
+            <li><a href="#" class="nav_item">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="login-btn">
+          <a href="#" class="logIn">
+            <span class="logIn-icon icon mdi mdi-account"></span>
+            Log In</a
+          >
+        </div>
+        <div class="joinus-btn">
+          <div>
+            <a href="#" class="link-image">
+              <img class="santa-svg" src="../icons/santa.svg" alt="" />
+            </a>
+          </div>
+          <div class="text-container">
+            <a href="#" class="joinUs-icon">
+              <span>Join Us</span>
+            </a>
+          </div>
+        </div>
+      </header>
+      <div class="joinUs-side-conteiner-root">
+        <div class="joinUs-side-conteiner">
+            <button class="hide-side-btn" id="hide-button">
+              <span class="mdi mdi-close-thick"></span>
+            </button>  
+            <div class="side-title">
+              <h3>Join Our Farm CSA </br>Program</h3>
+            </div>
+            <div class="inputs-container">
+              <div class="inputs-area">
+                <div class="input-wrapper">
+                  <label for="name">Enter Your First Name </label>
+                  <input type="text" placeholder="First Name" id="name">
+                </div>
+                <div class="input-wrapper">
+                  <label for="email">Enter Your Email* </label>
+                  <input type="text" placeholder="Email" id="email">
+                </div>
+                <div class="input-wrapper">
+                  <label for="city">Enter Your City </label>
+                  <input type="text" placeholder="City" id="city">
+                </div>
+              </div>
+              <div class="inputs-area">
+                <div class="input-wrapper">
+                  <label for="lastname">Enter Your Last Name </label>
+                  <input type="text" placeholder="Last Name" id="lastname">
+                </div>
+                <div class="input-wrapper">
+                  <label class="phone-label" for="phone">Enter Your Phone </label>
+                  <input type="tel" placeholder="Phone" id="phone">
+                </div>
+                <div class="input-wrapper">
+                  <label for="state">Enter Your State </label>
+                  <input type="text" placeholder="State" id="state">
+                </div>
+              </div>
+            </div>
+            <form>
+              <fieldset>
+              <legend>Choose the package that Fits your Family*</legend>
+                <div>
+                  <input type="checkbox" id="weekly" name="package" value="weekly">
+                  <label for="weekly">Weekly Share</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="bi-weekly" name="package" value="bi-weekly">
+                  <label for="bi-weekly">Bi-Weekly Share</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="wholesome" name="package" value="wholesome">
+                  <label for="wholesome">Wholesome Family Package</label>
+                </div>
+              </fieldset>
+            </form>
+              <button class="submit-btn" type="submit">Submit</button>
+        </div>
+      </div>
+      <div class="login-form" id="rootPoint">
+      </div>
+      <main>
+        <section class="banner">
+          <div class="baner-wrap">
+            <div class="wrap-wrap"><img src="https://static.wixstatic.com/media/ad420a_489a440a1e9f4e719b84ddb77e989393~mv2_d_5881_3921_s_4_2.jpg/v1/fill/w_1393,h_915,al_c,q_85,usm_0.66_1.00_0.01/ad420a_489a440a1e9f4e719b84ddb77e989393~mv2_d_5881_3921_s_4_2.webp" alt=""></div>
+          </div>
+        </section>
+        <section class="story-root"></section>
+      </main>
+      <footer class="footer-section"></footer>
+      <script src="../page_1/scripts/header_navigation.js"></script>
+      <script src="../page_about/script_index_about.js" type="module"></script>
+  </body>
+</html>

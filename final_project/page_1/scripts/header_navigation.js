@@ -8,7 +8,7 @@ const menu = document.querySelector(".menu");
 const loginBtn = document.querySelector(".login-btn");
 const navItem = document.querySelector(".nav_item");
 const hideBtn = document.querySelector(".hide-menu-btn");
-const joinSideBlock = document.querySelector(".joinUs-side-conteiner");
+const joinSideBlock = document.querySelector(".joinUs-side-conteiner-root");
 menuControl.addEventListener("click", () => {
   menuContent.classList.add("active");
   nameTitle.classList.add("inactive");
@@ -35,8 +35,13 @@ menuHide.addEventListener("click", () => {
   hideBtn.classList.remove("active");
 });
 
-const joinElemOpen = document.querySelector(".joinus-btn");
-joinElemOpen.addEventListener("click", () => {
+joinUsBtn.addEventListener("click", () => {
   joinSideBlock.classList.add("active");
   joinUsBtn.classList.add("inactive");
+});
+
+const sideBlockHide = document.querySelector("#hide-button");
+sideBlockHide.addEventListener("click", () => {
+  joinSideBlock.classList.remove("active");
+  joinUsBtn.classList.remove("inactive");
 });

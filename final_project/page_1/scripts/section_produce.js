@@ -27,7 +27,7 @@ export class SectionProduce {
   _renderSvg() {
     const svg = document.createElement("img");
     svg.classList.add("svg-img");
-    svg.src = "./circle-santa.svg";
+    svg.src = "../icons/circle-santa.svg";
     this._root.append(svg);
   }
 

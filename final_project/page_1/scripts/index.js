@@ -4,6 +4,7 @@ import { PhotoSection } from "./photo_section.js";
 import { BlogSection } from "./blog_section.js";
 import { BlogSectionLinks } from "./blog_section_lnks.js";
 import { Footer } from "./footer.js";
+import { LoginForm } from "./loginform.js";
 
 const rootElement = document.querySelector(".root");
 const section = new SectionSecond(rootElement);
@@ -20,3 +21,6 @@ const newElement = new BlogSectionLinks(blogcontainer);
 
 const footerBlock = document.querySelector(".footer-section");
 const block = new Footer(footerBlock);
+
+const loginFormElem = document.querySelector("#rootPoint");
+const loginpage = new LoginForm(loginFormElem);

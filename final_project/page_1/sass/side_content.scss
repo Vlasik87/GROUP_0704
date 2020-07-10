@@ -1,0 +1,153 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.1.45/css/materialdesignicons.css");
+
+@font-face {
+  font-family: "MyWebFont";
+  src: url("/final_project/fonts/normal.woff") format("woff");
+  font-weight: 400px;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MyWebFont";
+  src: url("/final_project/fonts/Italic.woff2") format("woff");
+  font-weight: 400px;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "MyWebFont";
+  src: url("/final_project/fonts/bold2.woff") format("woff");
+  font-weight: 700px;
+  font-style: normal;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-color-orange: #fe8340;
+  --bg-color-green: #293e31;
+  --text-color-orange: #fe8340;
+  --text-color-green: #293e31;
+}
+
+.joinUs-side-conteiner-root {
+  display: none;
+}
+
+.joinUs-side-conteiner {
+  position: relative;
+  width: 627px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.joinUs-side-conteiner-root.active {
+  display: block;
+  background-color: #293e31;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  height: 1000px;
+  width: 708px;
+}
+
+.inputs-container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h3,
+label,
+input,
+legend {
+  color: var(--text-color-orange);
+  font-style: italic;
+  font-family: "MyWebFont", sans-serif;
+}
+
+.inputs-area {
+  margin: 15px;
+}
+
+.input-wrapper > input {
+  width: 280px;
+  height: 30px;
+  margin: 15px 0 15px 0;
+  font-size: 15px;
+  border: 1px solid #fe8340;
+  background-color: var(--bg-color-green);
+}
+
+form {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+}
+
+fieldset {
+  border: 1px solid #fe8340;
+}
+
+#weekly,
+#bi-weekly,
+#wholesome {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 1px solid #fe8340;
+  background-color: var(--bg-color-green);
+}
+
+.side-title > h3 {
+  position: absolute;
+  top: 20%;
+  font-size: 36px;
+  left: 2%;
+}
+
+.submit-btn {
+  width: 150px;
+  height: 40px;
+  border-radius: 0px;
+  border: 1px;
+  color: rgba(41, 62, 49, 1);
+  font-size: 16px;
+  background-color: #fe8340;
+  font-family: "MyWebFont", sans-serif;
+  font-style: italic;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 13%;
+  &:hover {
+    background-color: var(--bg-color-green);
+    color: white;
+  }
+}
+
+.hide-side-btn > span {
+  font-size: 45px;
+  font-style: italic;
+  color: #fe8340;
+  font-family: "MyWebFont", sans-serif;
+}
+
+.hide-side-btn {
+  border: none;
+  background-color: var(--bg-color-green);
+  position: absolute;
+  left: 2%;
+  top: 5%;
+  z-index: 1;
+}

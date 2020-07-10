@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "MyWebFont";
+  src: url("/final_project/fonts/normal.woff") format("woff");
+  font-weight: 400px;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MyWebFont";
+  src: url("/final_project/fonts/Italic.woff2") format("woff");
+  font-weight: 400px;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "MyWebFont";
+  src: url("/final_project/fonts/bold2.woff") format("woff");
+  font-weight: 700px;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: MyWebFont, sans-serif;
+}
+
+.story-root {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-wrap {
+  display: flex;
+  justify-content: center;
+  min-height: 600px;
+  & .story-content {
+    position: relative;
+    display: flex;
+    width: 50%;
+  }
+}
+
+.story-content:last-child {
+  background-color: #293e31;
+}
+
+.text-wrap {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 45%;
+  z-index: 2;
+  left: 15%;
+}
+
+.head-text {
+  font-size: 40px;
+  display: block;
+  width: 500px;
+}
+
+.line {
+  border-top: 1px solid black;
+  transform-origin: center 0.5px;
+  width: 63px;
+  height: 5px;
+}
+
+.story-text {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 23px;
+  display: block;
+  width: 500px;
+  font-style: italic;
+}
+
+.svg-image {
+  width: 65%;
+  height: 65%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+@media (max-width: 415px) {
+  .main-wrap {
+    flex-wrap: wrap;
+  }
+
+  .second-section-text {
+    width: 100%;
+    left: 0;
+  }
+
+  .story-text {
+    width: 350px;
+  }
+
+  .story-content {
+    width: 100%;
+  }
+}

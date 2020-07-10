@@ -1,0 +1,26 @@
+.banner {
+  position: relative;
+  height: auto;
+  width: 100%;
+  min-height: 531px;
+}
+
+.baner-wrap {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.baner-wrap .wrap-wrap {
+  position: static;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  clip: rect(0px, 1300px, 531px, 0px);
+}
+
+/*# sourceMappingURL=pageabout_banner.css.map */

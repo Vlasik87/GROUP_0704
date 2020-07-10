@@ -27,7 +27,7 @@ export class Footer {
   _renderSvgElem() {
     this._svgImg = document.createElement("img");
     this._svgImg.classList.add("svg-house");
-    this._svgImg.src = "./house_little.svg";
+    this._svgImg.src = "../icons/house_little.svg";
     this._root.append(this._svgImg);
   }
 
