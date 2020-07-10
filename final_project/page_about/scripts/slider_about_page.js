@@ -1,5 +1,5 @@
 import { Slide } from "./slides_about.js";
-import { Control } from "../scripts/controls_about.js";
+import { Control } from "./controls_about.js";
 
 export class SectionSliderAbout {
   constructor(root = document.querySelector("#sliderAbout")) {

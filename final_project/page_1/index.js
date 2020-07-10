@@ -1,11 +1,15 @@
-import { SectionSecond } from "../scripts/second_section.js";
-import { SectionProduce } from "../scripts/section_produce.js";
-import { PhotoSection } from "../scripts/photo_section.js";
-import { BlogSection } from "../scripts/blog_section.js";
-import { BlogSectionLinks } from "../scripts/blog_section_lnks.js";
-import { Footer } from "../scripts/footer.js";
-import { SideContainerJoin } from "../scripts/side_panel_join.js";
-import { LoginForm } from "../scripts/loginform.js";
+import { Header } from "../header&footer/scripts/header_content.js";
+import { SectionSecond } from "../page_1/scripts/second_section.js";
+import { SectionProduce } from "../page_1/scripts/section_produce.js";
+import { PhotoSection } from "../page_1/scripts/photo_section.js";
+import { BlogSection } from "../page_1/scripts/blog_section.js";
+import { BlogSectionLinks } from "../page_1/scripts/blog_section_lnks.js";
+import { Footer } from "../header&footer/scripts/footer.js";
+import { SideContainerJoin } from "../header&footer/scripts/side_panel_join.js";
+import { LoginForm } from "../header&footer/scripts/loginform.js";
+
+const headerPanel = document.querySelector(".header_content");
+const headerelem = new Header(headerPanel);
 
 const rootElement = document.querySelector(".root");
 const section = new SectionSecond(rootElement);

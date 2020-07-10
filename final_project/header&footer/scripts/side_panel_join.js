@@ -100,15 +100,15 @@ export class SideContainerJoin {
   _openSide() {
     this._joinSideBlock = document.querySelector(".joinUs-side-conteiner-root");
     this._joinUsBtn = document.querySelector(".joinus-btn");
-    joinUsBtn.addEventListener("click", () => {
+    this._joinUsBtn.addEventListener("click", () => {
       this._joinSideBlock.classList.add("active");
       this._joinUsBtn.classList.add("inactive");
     });
   }
 
   _hideSide() {
-    const sideBlockHide = document.querySelector("#hide-button");
-    sideBlockHide.addEventListener("click", () => {
+    this._sideBlockHide = document.querySelector("#hide-button");
+    this._sideBlockHide.addEventListener("click", () => {
       this._joinSideBlock.classList.remove("active");
       this._joinUsBtn.classList.remove("inactive");
     });

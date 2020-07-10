@@ -42,15 +42,16 @@ export class LoginForm {
   _openform() {
     this._loginform = document.querySelector(".login-form");
     this._joinUsElem = document.querySelector(".joinus-btn");
-    loginBtn.addEventListener("click", () => {
+    this._loginBtn = document.querySelector(".login-btn");
+    this._loginBtn.addEventListener("click", () => {
       this._loginform.classList.add("active");
-      joinUsElem.classList.add("inactive");
+      this._joinUsElem.classList.add("inactive");
     });
   }
 
   _hideForm() {
-    const loginHide = document.querySelector("#hide-login");
-    loginHide.addEventListener("click", () => {
+    this._loginHide = document.querySelector("#hide-login");
+    this._loginHide.addEventListener("click", () => {
       this._loginform.classList.remove("active");
       this._joinUsElem.classList.remove("inactive");
     });
