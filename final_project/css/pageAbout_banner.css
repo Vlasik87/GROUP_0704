@@ -22,5 +22,8 @@
   bottom: 0px;
   clip: rect(0px, 1300px, 531px, 0px);
 }
+.baner-wrap img {
+  width: 100%;
+}
 
-/*# sourceMappingURL=pageabout_banner.css.map */
+/*# sourceMappingURL=pageAbout_banner.css.map */

@@ -1,10 +1,10 @@
-import { SectionSecond } from "./second_section.js";
-import { SectionProduce } from "./section_produce.js";
-import { PhotoSection } from "./photo_section.js";
-import { BlogSection } from "./blog_section.js";
-import { BlogSectionLinks } from "./blog_section_lnks.js";
-import { Footer } from "./footer.js";
-import { LoginForm } from "./loginform.js";
+import { SectionSecond } from "../scripts/second_section.js";
+import { SectionProduce } from "../scripts/section_produce.js";
+import { PhotoSection } from "../scripts/photo_section.js";
+import { BlogSection } from "../scripts/blog_section.js";
+import { BlogSectionLinks } from "../scripts/blog_section_lnks.js";
+import { Footer } from "../scripts/footer.js";
+import { LoginForm } from "../scripts/loginform.js";
 
 const rootElement = document.querySelector(".root");
 const section = new SectionSecond(rootElement);
