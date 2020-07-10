@@ -12,5 +12,5 @@ const story = new SectionOurStory(storyBlock);
 const loginFormElem = document.querySelector("#rootPoint");
 const loginpage = new LoginForm(loginFormElem);
 
-const sliderAbout = document.querySelector("#sliderAbout");
 const newslider = new SectionSliderAbout(sliderAbout);
+newslider.renderTest();
