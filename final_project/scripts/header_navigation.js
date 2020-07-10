@@ -34,14 +34,3 @@ menuHide.addEventListener("click", () => {
   loginBtn.classList.remove("active");
   hideBtn.classList.remove("active");
 });
-
-joinUsBtn.addEventListener("click", () => {
-  joinSideBlock.classList.add("active");
-  joinUsBtn.classList.add("inactive");
-});
-
-const sideBlockHide = document.querySelector("#hide-button");
-sideBlockHide.addEventListener("click", () => {
-  joinSideBlock.classList.remove("active");
-  joinUsBtn.classList.remove("inactive");
-});
