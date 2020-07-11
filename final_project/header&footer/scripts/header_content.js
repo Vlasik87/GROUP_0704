@@ -42,7 +42,7 @@ export class Header {
         <ul class="menu">
           <li><a href="../page_1/index.html" class="nav_item">Home</a></li>
           <li><a href="../page_about/index.html" class="nav_item">About</a></li>
-          <li><a href="#" class="nav_item">Our Produce</a></li>
+          <li><a href="../our_produce/index.html" class="nav_item">Our Produce</a></li>
           <li><a href="#" class="nav_item">Blog</a></li>
           <li><a href="#" class="nav_item">Contact Us</a></li>
         </ul>`;

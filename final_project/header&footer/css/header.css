@@ -146,7 +146,7 @@ a {
   width: 150px;
   display: flex;
   justify-content: space-between;
-  right: 0;
+  right: 8px;
   z-index: 10;
 }
 .joinus-btn.inactive {
