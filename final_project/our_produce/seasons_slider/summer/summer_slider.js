@@ -20,6 +20,7 @@ export class SliderSummer {
     this._renderBtnHide();
     this._renderSlidesUl();
     this._renderControls();
+    this._hidePage();
   }
 
   _renderSlidesUl() {
@@ -45,8 +46,8 @@ export class SliderSummer {
 
   _renderBtnHide() {
     this._loginHideBtn = document.createElement("button");
-    this._loginHideBtn.classList.add("hide-login-btn");
-    this._loginHideBtn.id = "hide-login";
+    this._loginHideBtn.classList.add("hide-seasons-btn");
+    this._loginHideBtn.id = "hide-season";
     this._loginHideBtn.innerHTML = `<span class="mdi mdi-close-thick"></span>`;
     this._sliderElem.append(this._loginHideBtn);
   }
@@ -105,5 +106,12 @@ export class SliderSummer {
 
   _hideSlide() {
     this._slides[this._activeSlide].removeActive();
+  }
+
+  _hidePage() {
+    this._hideBtn = document.querySelector("#hide-season");
+    this._hideBtn.addEventListener("click", () => {
+      window.location.href = "../../index.html";
+    });
   }
 }

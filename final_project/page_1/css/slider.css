@@ -62,7 +62,7 @@ img {
   z-index: 1;
   position: absolute;
   width: 100%;
-  bottom: -100px;
+  bottom: -65px;
 }
 
 .active,
