@@ -1,6 +1,6 @@
 const ACTIVE_CLASS_NAME = "active";
 
-export class Slide {
+export class SlideHomePage {
   constructor(root, slideData, styles = {}, isActive = false) {
     this._root = root;
     this._styles = styles;
@@ -16,13 +16,12 @@ export class Slide {
   render() {
     this._renderContainerElement();
     this._renderImageElement();
-    this._renderDescription();
     this._root.append(this._containerElement);
   }
 
   _renderContainerElement() {
     this._containerElement = document.createElement("li");
-    this._containerElement.classList.add("slide-seasons");
+    this._containerElement.classList.add("slide_banner_homepage");
     if (this._isActive) {
       this.setActive();
     }
@@ -31,23 +30,9 @@ export class Slide {
 
   _renderImageElement() {
     const imgElement = document.createElement("img");
-    imgElement.classList.add("slide-img-seasons");
+    imgElement.classList.add("slide-img-banner-homepage");
     imgElement.src = this._slideData;
     this._containerElement.append(imgElement);
-  }
-
-  _renderDescription() {
-    this._description = document.createElement("div");
-    this._description.classList.add("description-products");
-    const titleProduct = document.createElement("h3");
-    titleProduct.classList.add("title-produc");
-    titleProduct.textContent = this._slideData;
-    const underTitleText = document.createElement("p");
-    underTitleText.classList.add("underTitleText");
-    underTitleText.textContent = this._slideData;
-    this._description.append(titleProduct);
-    this._description.append(underTitleText);
-    this._containerElement.append(this._description);
   }
 
   _setStyles() {

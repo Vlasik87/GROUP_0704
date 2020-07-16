@@ -16,7 +16,7 @@
 }
 
 .slide-img-seasons {
-  width: 100%;
+  width: 60%;
   display: block;
 }
 
@@ -27,12 +27,18 @@
 
 .slide-seasons {
   list-style: none;
-  width: 700px;
+  width: 950px;
   position: relative;
   opacity: 0;
   visibility: hidden;
   transition: opacity 500ms;
   height: 450px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.description-products {
+  width: 40%;
 }
 
 .control-seasons {

@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "MyWebFont";
+  src: url("/final_project/fonts/normal.woff") format("woff");
+  font-weight: 400px;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyWebFont";
+  src: url("/final_project/fonts/Italic.woff2") format("woff");
+  font-weight: 400px;
+  font-style: italic;
+}
+@font-face {
+  font-family: "MyWebFont";
+  src: url("/final_project/fonts/bold2.woff") format("woff");
+  font-weight: 700px;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: MyWebFont, sans-serif;
+}
+
+h2,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.baner_slider {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #edeaf0;
+  max-width: 1450px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.banner-wrap {
+  max-width: 1450px;
+  width: 100%;
+  position: relative;
+}
+
+.text-banner-wrap {
+  position: absolute;
+  top: 50%;
+  color: #fcf9f4;
+  transform: translateY(-50%);
+  left: 25%;
+}
+
+.banner-button {
+  background: white;
+  border: none;
+  width: 150px;
+  height: 35px;
+  border-radius: 2px;
+  margin-top: 15px;
+  font-size: 16px;
+}
+.banner-button:hover {
+  background: orange;
+}
+
+.slide-img-banner-homepage {
+  width: 100%;
+  display: block;
+}
+
+.text-title-banner {
+  font-size: 87px;
+}
+
+.undertext-banner {
+  font-size: 32px;
+  display: block;
+  padding: 10px 0 10px 0;
+}
+
+.slide_banner_homepage.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.slide_banner_homepage {
+  list-style: none;
+  width: 100%;
+  position: relative;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 500ms;
+}
+
+.control-banner {
+  border: none;
+  background: none;
+  font-size: 1rem;
+  color: white;
+  text-align: end;
+}
+
+.control-banner:first-child {
+  text-align: start;
+}
+
+.control-banner:active {
+  border: none;
+  background: none;
+}
+
+.slideshow-slides-banner {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.slideshow-slides-banner > * {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.slideshow_controls-banner {
+  position: absolute;
+  width: 1400px;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.slideshow_controls-banner > * {
+  flex-grow: 1;
+}
+
+@media (max-width: 415px) {
+  .banner-wrap {
+    width: 360px;
+    top: 20%;
+    left: 5%;
+  }
+
+  .rootPoint {
+    min-height: 100vh;
+  }
+}
+
+/*# sourceMappingURL=slider_baner.css.map */

@@ -33,13 +33,14 @@ li {
 
 .header_content {
   font-family: MyWebFont;
-  width: 100%;
   background-color: var(--bg-color-green);
   height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  max-width: 1450px;
+  width: 100%;
 }
 
 .name-title {
@@ -112,7 +113,7 @@ li {
 .login-btn {
   line-height: 100px;
   position: absolute;
-  right: 200px;
+  right: 215px;
 }
 
 .logIn {
@@ -146,7 +147,7 @@ a {
   width: 150px;
   display: flex;
   justify-content: space-between;
-  right: 8px;
+  right: 0px;
   z-index: 10;
 }
 .joinus-btn.inactive {
