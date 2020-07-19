@@ -12,6 +12,7 @@ export class Header {
     this._renderJoinUsBlock();
     this._renderOpenMenu();
     this._renderHideMenu();
+    this._homePageRedirect();
   }
 
   _renderNameTitle() {
@@ -113,6 +114,13 @@ export class Header {
       this._navItem.classList.remove("active");
       this._loginBtn.classList.remove("active");
       this._hideBtn.classList.remove("active");
+    });
+  }
+
+  _homePageRedirect() {
+    this._redirect = document.querySelector(".name-title");
+    this._redirect.addEventListener("click", () => {
+      window.location.href = "../page_home/index.html";
     });
   }
 }

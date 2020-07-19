@@ -19,6 +19,7 @@ export class SectionSliderBannerHome {
     this._renderSlidesUl();
     this._renderControls();
     this._renderBannerTextBox();
+    this._startSlide();
   }
 
   _renderSlidesUl() {
@@ -108,5 +109,24 @@ export class SectionSliderBannerHome {
 
   _hideSlide() {
     this._slides[this._activeSlide].removeActive();
+  }
+
+  _nextSlideToggle() {
+    if (this._activeSlide < this._slides.length - 1) {
+      this._activeSlide++;
+    } else {
+      this._activeSlide = 0;
+    }
+
+    console.log(this._activeSlide);
+  }
+
+  _startSlide() {
+    const animationInterval = 5000;
+    setInterval(() => {
+      this._hideSlide();
+      this._nextSlide();
+      this._showSlide();
+    }, animationInterval);
   }
 }

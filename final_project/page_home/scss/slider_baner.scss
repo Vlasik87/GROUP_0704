@@ -39,13 +39,12 @@ li {
   width: 100%;
   margin: 0 auto;
   background-color: rgb(237, 234, 240);
-  max-width: 1450px;
+  min-width: 1450px;
   width: 100%;
   margin: 0 auto;
 }
 
 .banner-wrap {
-  max-width: 1450px;
   width: 100%;
   position: relative;
 }
@@ -106,6 +105,7 @@ li {
   font-size: 1rem;
   color: white;
   text-align: end;
+  outline: none;
 }
 
 .control-banner:first-child {
