@@ -6,10 +6,20 @@ export class Control {
     this.render();
   }
 
+  //render() {
+  //this._control = document.createElement("button");
+  //this._control.classList.add("control-banner");
+  //this._control.innerHTML = `<span>${this._title}</span>`;
+  //if (this._clickHandler) {
+  //  this._control.addEventListener("click", (e) => this._clickHandler(e));
+  //}
+  //this._root.append(this._control);
+  //}
+
   render() {
-    this._control = document.createElement("button");
-    this._control.classList.add("control-banner");
-    this._control.innerHTML = `<span>${this._title}</span>`;
+    this._control = document.createElement("div");
+    this._control.style = "text-align:center";
+    this._control.innerHTML = `<span class="dot">${this._title}</span>`;
     if (this._clickHandler) {
       this._control.addEventListener("click", (e) => this._clickHandler(e));
     }

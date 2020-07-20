@@ -12,6 +12,7 @@ export class SectionSliderBannerHome {
       "https://static.wixstatic.com/media/ad420a_66bb032f4e6e4ab6adf8d2642f5000e0~mv2_d_5472_3648_s_4_2.jpg/v1/fill/w_980,h_750,al_c,q_85,usm_0.66_1.00_0.01/ad420a_66bb032f4e6e4ab6adf8d2642f5000e0~mv2_d_5472_3648_s_4_2.webp",
     ];
     this._slides = [];
+    this._slideIndex = 1;
   }
 
   renderTest() {
@@ -19,6 +20,7 @@ export class SectionSliderBannerHome {
     this._renderSlidesUl();
     this._renderControls();
     this._renderBannerTextBox();
+    this._renderShowSlides(this._slideIndex);
     this._startSlide();
   }
 
@@ -60,12 +62,20 @@ export class SectionSliderBannerHome {
     controlsWrapper.classList.add("slideshow_controls-banner");
     const controls = [
       {
-        title: "<",
-        onClick: () => this._previosSlide(),
+        title: "",
+        onClick: () => this._renderCurrentSlide(1),
       },
       {
-        title: ">",
-        onClick: () => this._nextSlide(),
+        title: "",
+        onClick: () => this._renderCurrentSlide(2),
+      },
+      {
+        title: "",
+        onClick: () => this._renderCurrentSlide(3),
+      },
+      {
+        title: "",
+        onClick: () => this._renderCurrentSlide(4),
       },
     ];
     controls.forEach(
@@ -75,40 +85,38 @@ export class SectionSliderBannerHome {
     this._sliderElem.append(controlsWrapper);
   }
 
-  _increaseIndex() {
-    if (this._activeSlide + 1 < this._slides.length) {
-      this._activeSlide += 1;
-    } else {
-      this._activeSlide = 0;
+  _renderCurrentSlide(n) {
+    this._renderShowSlides((this._slideIndex = n));
+  }
+
+  _renderShowSlides(n) {
+    this._dots = document.querySelectorAll(".dot");
+    if (n > this._slides.length) {
+      this._slideIndex = 1;
     }
-  }
-
-  _decreaseIndex() {
-    if (this._activeSlide - 1 >= 0) {
-      this._activeSlide -= 1;
-    } else {
-      this._activeSlide = this._slides.length - 1;
+    if (n < 1) {
+      this._slideIndex = this._slides.length;
     }
-  }
-
-  _previosSlide() {
-    this._hideSlide();
-    this._decreaseIndex();
-    this._showSlide();
-  }
-
-  _nextSlide() {
-    this._hideSlide();
-    this._increaseIndex();
-    this._showSlide();
+    for (let i = 0; i < this._slides.length; i++) {
+      this._slides[i].removeActive();
+    }
+    for (let i = 0; i < this._dots.length; i++) {
+      this._dots[i].className = this._dots[i].className.replace("active", "");
+    }
+    this._slides[this._slideIndex - 1].setActive();
+    this._dots[this._slideIndex - 1].classList.add("active");
   }
 
   _showSlide() {
     this._slides[this._activeSlide].setActive();
+    this._dots[this._slideIndex].classList.add("active");
   }
 
   _hideSlide() {
     this._slides[this._activeSlide].removeActive();
+    for (let i = 0; i < this._dots.length; i++) {
+      this._dots[i].className = this._dots[i].className.replace("active", "");
+    }
   }
 
   _nextSlideToggle() {
@@ -117,15 +125,18 @@ export class SectionSliderBannerHome {
     } else {
       this._activeSlide = 0;
     }
-
-    console.log(this._activeSlide);
+    if (this._slideIndex < this._dots.length - 1) {
+      this._slideIndex++;
+    } else {
+      this._slideIndex = 0;
+    }
   }
 
   _startSlide() {
-    const animationInterval = 5000;
+    const animationInterval = 3000;
     setInterval(() => {
       this._hideSlide();
-      this._nextSlide();
+      this._nextSlideToggle();
       this._showSlide();
     }, animationInterval);
   }
