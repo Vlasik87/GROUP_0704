@@ -36,7 +36,7 @@ export class SectionProduce {
     this._sliderBox.classList.add("slideshow");
     this._sliderBox.innerHTML = `
     <div class="mySlides fade">
-    <img src="./Screenshot_1.png" alt="">
+    <img src="#" alt="">
     </div>
     `;
     this._root.append(this._sliderBox);

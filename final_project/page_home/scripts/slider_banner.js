@@ -133,7 +133,7 @@ export class SectionSliderBannerHome {
   }
 
   _startSlide() {
-    const animationInterval = 3000;
+    const animationInterval = 7000;
     setInterval(() => {
       this._hideSlide();
       this._nextSlideToggle();
