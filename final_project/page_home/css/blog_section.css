@@ -127,6 +127,7 @@ a > h5:hover {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  outline: none;
 }
 
 @media (max-width: 415px) {

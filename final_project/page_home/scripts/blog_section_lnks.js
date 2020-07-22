@@ -11,6 +11,7 @@ export class BlogSectionLinks {
     this._renderUrbanGarden();
     this._root.append(this._contentBox);
     this._renderButton();
+    this._showPageBlog();
   }
 
   _renderBlogSectionContentBox() {
@@ -114,7 +115,15 @@ export class BlogSectionLinks {
   _renderButton() {
     this._btn = document.createElement("button");
     this._btn.classList.add("btn");
+    this._btn.id = "SeeMore";
     this._btn.textContent = "See More";
     this._root.append(this._btn);
+  }
+
+  _showPageBlog() {
+    this._seeMoreBtn = document.querySelector("#SeeMore");
+    this._seeMoreBtn.addEventListener("click", () => {
+      window.location.href = "../page_blog/index.html";
+    });
   }
 }
