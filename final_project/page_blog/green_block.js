@@ -7,7 +7,8 @@ export class GreenBlockBlogContent {
   render() {
     this._renderGreenBlock();
     this._root.append(this._greenBlock);
-    this._showAllPosts();
+    //this._showAllPosts();
+    //this._showNewsPage();
   }
 
   _renderGreenBlock() {
@@ -18,8 +19,8 @@ export class GreenBlockBlogContent {
     const menu = document.createElement("ul");
     menu.classList.add("blog-menu");
     menu.innerHTML = `
-          <li><a href="#" class="nav_item" id="AllPosts">All Posts</a></li>
-          <li><a href="#" class="nav_item">News</a></li>
+          <li><a href="../all_posts/index.html" class="nav_item" id="AllPosts">All Posts</a></li>
+          <li><a href="../news/index.html" class="nav_item" id="newsPage">News</a></li>
           <li><a href="#" class="nav_item">Recipes</a></li>
           <li><a href="#" class="nav_item">Events</a></li>`;
     this._greenBlock.append(menu);
@@ -27,9 +28,19 @@ export class GreenBlockBlogContent {
 
   _showAllPosts() {
     this._menuAllPosts = document.querySelector("#AllPosts");
-    this._menuAllPosts.classList.add("active");
+    this._newsPage = document.querySelector("#newsPage");
     this._menuAllPosts.addEventListener("click", () => {
-      window.location.href = "../page_blog/index.html";
+      window.location.href = "../all_posts/index.html";
+      this._newsPage.classList.remove("active");
+      this._menuAllPosts.classList.add("active");
+    });
+  }
+
+  _showNewsPage() {
+    this._newsPage.addEventListener("click", () => {
+      window.location.href = "../news/index.html";
+      this._menuAllPosts.classList.remove("active");
+      this._newsPage.classList.add("active");
     });
   }
 }

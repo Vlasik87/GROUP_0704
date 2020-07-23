@@ -44,7 +44,7 @@ export class Header {
           <li><a href="../page_home/index.html" class="nav_item">Home</a></li>
           <li><a href="../page_about/index.html" class="nav_item">About</a></li>
           <li><a href="../our_produce/index.html" class="nav_item">Our Produce</a></li>
-          <li><a href="../page_blog/index.html" class="nav_item">Blog</a></li>
+          <li><a href="../page_blog/all_posts/index.html" class="nav_item">Blog</a></li>
           <li><a href="../page_contactUs/index.html" class="nav_item">Contact Us</a></li>
         </ul>`;
     this._root.append(this._menu);

@@ -1,5 +1,5 @@
-import { GreenBlockBlogContent } from "./all_posts/script/green_block.js";
-import { BlogSectionLinks } from "./all_posts/script/blog_content.js";
+import { GreenBlockBlogContent } from "../green_block.js";
+import { BlogSectionLinks } from "../all_posts/blog_content.js";
 
 const greenblockelement = document.querySelector(".green-section-root");
 const bloggreenelem = new GreenBlockBlogContent(greenblockelement);
