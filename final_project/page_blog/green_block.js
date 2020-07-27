@@ -21,8 +21,8 @@ export class GreenBlockBlogContent {
     menu.innerHTML = `
           <li><a href="../all_posts/index.html" class="nav_item" id="AllPosts">All Posts</a></li>
           <li><a href="../news/index.html" class="nav_item" id="newsPage">News</a></li>
-          <li><a href="#" class="nav_item">Recipes</a></li>
-          <li><a href="#" class="nav_item">Events</a></li>`;
+          <li><a href="../recipes/index.html" class="nav_item">Recipes</a></li>
+          <li><a href="../events/index.html" class="nav_item">Events</a></li>`;
     this._greenBlock.append(menu);
   }
 

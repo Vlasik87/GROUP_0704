@@ -27,7 +27,7 @@ export class BlogSectionLinks {
     const basketbox = document.createElement("div");
     basketbox.classList.add("box-content");
     basketbox.innerHTML = `
-    <a href="#">
+    <a href="../links_pages/post_one.html">
     <div class="image-wrapp  first"></div> 
   </a>
   <div class="title-wrapp">
