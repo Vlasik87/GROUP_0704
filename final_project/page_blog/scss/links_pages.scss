@@ -195,6 +195,16 @@ html {
   font-style: italic;
 }
 
+.textAfterAuthor {
+  font-size: 14px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 150px;
+  font-style: italic;
+}
+
 .btn-dots {
   display: inline-block;
   position: absolute;
@@ -311,11 +321,18 @@ html {
       width: 130px;
       display: flex;
       justify-content: space-between;
+      & > * {
+        cursor: pointer;
+      }
     }
     & a {
       color: rgb(41, 62, 49);
       font-size: 16px;
       font-style: italic;
+      cursor: pointer;
+      &:hover {
+        color: blue;
+      }
       & span {
         font-size: 20px;
       }
@@ -334,4 +351,38 @@ html {
   background-color: #edeaf0;
   border: none;
   font-size: 18px;
+}
+
+.imgBtn {
+  border: none;
+  width: 100%;
+  padding: 0;
+}
+
+.blogAdditionalSection {
+  display: none;
+}
+
+.bigImage {
+  width: 1227px;
+  height: 920px;
+  margin: 0 auto;
+}
+
+.active {
+  width: 100%;
+  background-color: black;
+  display: block;
+}
+
+.hide-image-btn {
+  background-color: black;
+  border: none;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  & span {
+    color: lightgray;
+    font-size: large;
+  }
 }
